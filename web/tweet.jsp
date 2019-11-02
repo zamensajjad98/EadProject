@@ -55,7 +55,7 @@
 
     <ul>
         <li><a href="#news">TWITTER</a></li>
-
+        <li style="float:right"><a class="active" href="login.jsp">logout</a></li>
     </ul>
     <h2>tweet here</h2>
 <form action="showtweets" method="post">
