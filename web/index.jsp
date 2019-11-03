@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>assignment1</title>
 
     <style>
@@ -54,38 +55,45 @@
     <li style="float:right"><a href="login.jsp">login</a></li>
 
   </ul>
-
-  <h1>create your  twitter account </h1>
+  <div class="container" >
+      <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+  <h1>Sign up </h1>
   <form action="saveddata" method="post">
 
 
-    NAME : <input type="text" name="myname">
+    NAME : <input type="text" class="form-control" name="myname" placeholder="Enter name">
     </br>
     </br>
-    USER NAME :  <input type="text" name="myusername">
+
+    USER NAME : <input type="text" class="form-control" name="myusername" placeholder="Enter username">
     </br>
     </br>
-    PASSWORD :  <input type="password" name="mypassword">
+    PASSWORD :  <input type="password" class="form-control" name="mypassword" placeholder="Enter password">
     </br>
     </br>
 
 
-    DATE OF BIRTH:  <input type="date" name="mybirthdate">
+    DATE OF BIRTH:  <input type="date" class="form-control" name="mybirthdate" >
     </br>
     </br>
-    EMAIL ADDRESS:  <input type="email" name="myemail">
+    EMAIL ADDRESS:  <input type="email" class="form-control" name="myemail" placeholder="Enter email">
     </br>
     </br>
-    UPLOAD IMAGE : <input type="file" name="myfile"><br>
+    UPLOAD IMAGE : <input type="file"  class="file" name="myfile"><br>
     <br>
     </br>
     </br>
-    <input type="submit" value="SUBMIT" >
+      <button type="submit" class="btn btn-primary">Submit</button>
     </br>
     </br>
     </br>
     <h6>Already have an account? click login </h6> <h5><a href="login.jsp">Login</a></h5>
   </form>
-
+          </div>
+          <div class="col-lg-2"></div>
+      </div>
+  </div>
   </body>
 </html>

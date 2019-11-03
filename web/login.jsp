@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Login</title>
     <style>
         ul {
@@ -52,20 +53,29 @@
     <li style="float:right"><a class="active" href="index.jsp">sign up</a></li>
     <li style="float:right"><a href="login.jsp">login</a></li>
 </ul>
+<div class="container" >
+   <div class="row">
+       <div class="col-lg-2"></div>
+       <div class="col-lg-8">
+<h1>Login </h1>
 
-<h1>login to your account </h1>
 <form action="comparedata" method="get">
-    USER NAME :  <input type="text" name="username">
+
+    USER NAME :   <input type="text" class="form-control" name="username" placeholder="Enter username">
     </br>
     </br>
-    PASSWORD :  <input type="password" name="password">
+
+    PASSWORD : <input type="password" class="form-control" name="password" placeholder="Password">
     </br>
     </br>
-    <input type="submit" value="SUBMIT" >
-    </br>
-    </br>
-    </br>
-    <input type="submit" value="CANCEL" >
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+
 </form>
+       </div>
+       <div class="col-lg-2"></div>
+   </div>
+</div>
 </body>
 </html>
