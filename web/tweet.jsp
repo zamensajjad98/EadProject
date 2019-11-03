@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>tweets</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -50,13 +51,17 @@
 
 </head>
 <body>
-<div class="container">
+
 
 
     <ul>
         <li><a href="#news">TWITTER</a></li>
         <li style="float:right"><a class="active" href="login.jsp">logout</a></li>
     </ul>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
     <h2>tweet here</h2>
 <form action="showtweets" method="post">
 
@@ -64,13 +69,13 @@
 
                 <textarea class="form-control" rows="5" name="tweets"></textarea>
             </div>
-
     </br>
-    </br>
-    <input type="submit" value="posttweet"></input>
-
+    <button type="submit" class="btn btn-primary">posttweet</button>
     </form>
-
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
 </div>
 </body>
 </html>
