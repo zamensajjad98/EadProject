@@ -70,6 +70,8 @@
     <div class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
+
+            <h1>Hi <%=username%> Welcome</h1>
     <h2>tweet here</h2>
 <form action="showtweets" method="post">
 
