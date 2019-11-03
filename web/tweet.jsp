@@ -56,7 +56,7 @@
 
     <ul>
         <li><a href="#news">TWITTER</a></li>
-        <li style="float:right"><a class="active" href="login.jsp">logout</a></li>
+        <li style="float:right"><a class="active" href="logout">logout</a></li>
     </ul>
     <div class="container">
     <div class="row">

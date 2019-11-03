@@ -81,7 +81,7 @@
     EMAIL ADDRESS:  <input type="email" class="form-control" name="myemail" placeholder="Enter email">
     </br>
     </br>
-    UPLOAD IMAGE : <input type="file"  class="file" name="myfile"><br>
+    UPLOAD IMAGE : <input type="file"   name="myfile"><br>
     <br>
     </br>
     </br>
