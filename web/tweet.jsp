@@ -51,8 +51,16 @@
 
 </head>
 <body>
-
-
+<%
+    String username = null;
+    HttpSession session1 = request.getSession(false);
+    if (session1!=null){
+        if(session1.getAttribute("username")!=null){
+            username = (String)session1.getAttribute("username");
+        }else
+            response.sendRedirect("login.jsp");
+    }
+%>
 
     <ul>
         <li><a href="#news">TWITTER</a></li>

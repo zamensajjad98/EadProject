@@ -12,11 +12,6 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        HttpSession session = request.getSession(false);
-        if(session!=null){
-            session.invalidate();
-            response.sendRedirect("login.jsp");
-        }
 
         /*Cookie loginCooke = null;
         Cookie[] cookies = request.getCookies();
@@ -35,7 +30,13 @@ public class LogoutServlet extends HttpServlet {
         }*/
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    {
 
+        HttpSession session = request.getSession(false);
+        if(session!=null){
+            session.invalidate();
+            response.sendRedirect("login.jsp");
+        }
     }
 }

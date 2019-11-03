@@ -45,7 +45,7 @@ public class Servlet extends HttpServlet {
         if(count>0)
         {
             HttpSession session = request.getSession();
-            session.setAttribute("name","username");
+            session.setAttribute("username",name);
             session.setMaxInactiveInterval(30*60);
             response.sendRedirect("tweet.jsp");
         }
